@@ -14,7 +14,7 @@ steps = 100000
 N = 3
 
 
-separation_factor = 5
+separation_factor = 3
 # Trap stiffness
 KT = 2e-6
 kappa = np.ones(N) * KT
@@ -30,5 +30,5 @@ R = separation_factor * a
 
 # Driving
 drive = {
-    1: {"A": R/2, "omega": 0.25*2*np.pi, "direction": np.array([1.0, 0.0])}
+    1: {"A": R/2, "omega": 1*2*np.pi, "direction": np.array([1.0, 0.0])}
 }
