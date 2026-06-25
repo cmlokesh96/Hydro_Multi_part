@@ -1,4 +1,4 @@
-from config import *
+from Sim_Parameters import *
 from simulation import run
 from visualize import plot_initial, plot_trajectory, plot_force
 
