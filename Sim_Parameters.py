@@ -28,7 +28,9 @@ pos0 = trap0 + np.sqrt(kBT / KT) * np.random.randn(N, 2)
 
 R = separation_factor * a
 
+omega=1*2*np.pi 
+
 # Driving
 drive = {
-    1: {"A": R/2, "omega": 1*2*np.pi, "direction": np.array([1.0, 0.0])}
+    1: {"A": R/2, "omega": omega, "direction": np.array([1.0, 0.0])}
 }
