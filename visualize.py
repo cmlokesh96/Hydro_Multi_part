@@ -26,6 +26,10 @@ def plot_initial(pos, traps, a):
         zorder=3,
     )
 
+    # Label each particle with its index (0, 1, 2, ...)
+    for i, (x, y) in enumerate(pos_um):
+        ax.text(x + 0.8, y + 0.8, str(i), fontsize=10, color="black", zorder=4)
+
     # 3. Add a physical circle of radius 'a_um' around each particle center
     for i in range(len(pos_um)):
         circle = plt.Circle(
